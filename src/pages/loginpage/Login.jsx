@@ -1,12 +1,48 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
+import Lottie from "lottie-react";
+import loginAnimation from '../../../public/login/animation_lkdqngcl.json'
 
 const Login = () => {
     const {googleLogin}= useContext(AuthContext);
     const handleLogin = (event) =>{
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        event.target.reset();
 
+        setError('');
+        if (email === '') {
+            setError('Please write your resister Email');
+            return
+        }
+        else if (password.length < 6) {
+            setError('Password must be 6 characters long');
+            return
+        }
+        else if (password === '') {
+            setError('Please type your password');
+            return
+        }
+
+        // login by email and password--
+        emailSignIn(email, password)
+            .then(result => {
+                const loggedUser = result.user;
+                console.log(loggedUser);
+                setSuccess("You have successfully logged in to your account .!");
+                setError('');
+                navigate(from, { replace: true });
+
+            })
+            .catch(error => {
+                setError(error.message);
+                setError('Password Dose not match')
+            })
     }
+    // Google login --
     const handleGoogle = () => {
         googleLogin()
         .then(result => {
@@ -24,27 +60,9 @@ const Login = () => {
     }
     return (
         <>
-            <div className='animation'>
+        <div className=' grid lg:grid-cols-2 sm:grid-cols-1'>
 
-                <div className="flex items-center justify-center ">
-                    <div className="relative">
-                        <div className="  absolute rounded-full top-72 left-4 w-72 h-72 bg-lime-500 filter blur-2xl mix-blend-multiply opacity-75 "></div>
-
-
-                        <div className=" absolute rounded-full top-72 -right-4 w-72 h-72  bg-amber-500 filter blur-2xl mix-blend-multiply opacity-75  "></div>
-
-                        <div className=" absolute rounded-full top-20 -right-4 w-72 h-72 bg-fuchsia-500 filter blur-2xl  mix-blend-multiply opacity-75  animation-delay-4s"></div>
-
-                        <div className=" absolute rounded-full top-20 -left-4 w-72 h-72 bg-teal-500 filter blur-2xl mix-blend-multiply opacity-75 "></div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <div className="w-full mt-10 mb-5 relative mx-auto  max-w-md p-4 rounded-md sm:p-8   text-black shadow-2xl">
+        <div className="w-full mt-10 mb-5 mx-auto  max-w-md p-4 rounded-md sm:p-8   text-black shadow-2xl">
                 <h2 className="mb-3 text-3xl font-semibold text-center">Login your account</h2>
 
 
@@ -87,9 +105,18 @@ const Login = () => {
 
 
 
-                    <button type="submit" className="w-full text-white px-8 py-3 font-semibold rounded-md bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">Sign in</button>
+                    <button type="submit" className="w-full text-blue-500 px-8 py-3 rounded-md">Sign in</button>
                 </form>
             </div>
+
+              <div className="w-full max-w-sm p-6 m-auto mx-auto ">
+                        <Lottie animationData={loginAnimation} loop={true} />
+                    
+    </div>          
+
+
+        </div>
+            
         </>
     );
 };

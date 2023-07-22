@@ -1,0 +1,473 @@
+[
+    {
+      "collegeImage": "https://img.freepik.com/free-photo/hotel_1127-4043.jpg?w=740&t=st=1690024531~exp=1690025131~hmac=ab66ff526478758444e383cdbd894fb92d327ffefc56ef47f97bbe1f64619be0",
+      "collegeName": "University of Exampleville",
+      "collegeRating": "4.5",
+      "admissionDates": {
+        "fall": "September 2023",
+        "spring": "January 2024"
+      },
+      "admissionProcess": "Prospective students need to submit their applications online through the university's website. Admissions are based on academic performance, standardized test scores, and extracurricular activities. Shortlisted candidates are invited for interviews before final selections are made.",
+      "events":  { 
+        "one":{
+        "name": "Orientation Day",
+        "date": "September 5, 2023",
+        "description": "New students are welcomed to the campus, introduced to the faculty, and provided with essential information to begin their academic journey."
+      },
+     "two": {
+        "name": "Career Fair",
+        "date": "October 15, 2023",
+        "description": "Representatives from various industries and companies visit the campus to offer career opportunities and internships to students."
+      },
+      "three":{
+        "name": "Alumni Reunion",
+        "date": "November 20, 2023",
+        "description": "Former graduates gather to reconnect with classmates, share memories, and discuss their professional achievements."
+      },
+      "fore":{
+        "name": "Science Exhibition",
+        "date": "December 10, 2023",
+        "description": "Students and faculty showcase their research projects and scientific innovations to the broader community."
+      }
+    },
+      "researchHistory": {
+        "foundingYear": 1950,
+        "notableDiscoveries": {
+        "one": "First exoplanet discovered",
+        "two":"Breakthrough in cancer research."
+        },
+        "description": "The University of Exampleville has a rich history of groundbreaking research in various fields. From pioneering work in astronomy to life-saving medical breakthroughs, the university continues to push the boundaries of knowledge and innovation."
+      },
+      "sports": {
+        "one":"Football",
+        "two":"Bbasketall",
+        "three":"Swimming",
+        "fore":"Soccer"
+    },
+    "sportsFacilities": "The university boasts state-of-the-art sports facilities, including a modern gymnasium, swimming pool, and multiple sports fields. Students can join various sports teams and clubs to participate in local and intercollegiate competitions."
+    },
+    {
+      "collegeImage": "https://img.freepik.com/free-photo/architecture-independence-palace-ho-chi-minh-city_181624-21243.jpg?w=740&t=st=1690024724~exp=1690025324~hmac=72bf2f03990052a4afdbe02d5b8f2b600b1c904f5fb6ccf9f0fa0a69a26df496",
+      "collegeName": "Tech Institute of Innovation",
+      "collegeRating": "4",
+      "admissionDates": {
+        "fall": "August 2023",
+        "spring": "January 2024"
+      },
+      "admissionProcess": "Applicants can apply through the institute's website or by submitting a physical application form. Admissions are selective and take into account academic performance, recommendation letters, and a statement of purpose. Shortlisted candidates are invited for interviews or coding challenges before final decisions are made.",
+      "events": {
+        "one":{
+            "name": "Hackathon",
+            "date": "September 10-12, 2023",
+            "description": "Students participate in a 48-hour coding and innovation marathon, collaborating in teams to build unique tech solutions."
+          },
+         "two": {
+            "name": "Tech Conference",
+            "date": "October 25-27, 2023",
+            "description": "Industry leaders and experts are invited to share insights on the latest technological advancements and trends."
+          },
+          "three":{
+            "name": "Innovation Expo",
+            "date": "November 15, 2023",
+            "description": "Students showcase their innovative projects, startups, and research findings to potential investors and industry partners."
+          },
+          "fore":{
+            "name": "Startup Pitch Competition",
+            "date": "December 5, 2023",
+            "description": "Aspiring entrepreneurs present their business ideas to a panel of judges, vying for funding and support to launch their ventures."
+          }
+      },
+      "researchHistory": {
+        "foundingYear": 1990,
+        "notableDiscoveries": {
+            "one":"Groundbreaking AI research",
+            "two":"Advancements in renewable energy."
+        },
+        "description": "The Tech Institute of Innovation is at the forefront of technological research and development. Its contributions to artificial intelligence and sustainable energy have garnered global recognition and have a positive impact on various industries."
+      },
+      "sports": {
+        "one":"Esports",
+        "two":"Volleyball",
+        "three":"Table Tennis",
+        "fore":"Badminton"
+      },
+      "sportsFacilities": "The institute provides dedicated gaming arenas for esports enthusiasts and well-equipped courts for indoor sports like volleyball, table tennis, and badminton. Students can participate in esports tournaments and friendly matches."
+    },
+    {
+        "collegeImage": "https://img.freepik.com/free-photo/aerial-view-residence-bukovinian-dalmatian-metropolitans-chernivtsi-national-university-chernivtsi-touristic-destination-western-ukraine_231208-48.jpg?w=826&t=st=1690027869~exp=1690028469~hmac=af120e3931caed8fe8915888293ec4c8806fbe7e0d38e5679fc43b8dd76c5d21",
+        "collegeName": "Art Institute of Creativity",
+        "collegeRating": "4.5",
+        "admissionDates": {
+          "fall": "October 2023",
+          "spring": "February 2024"
+        },
+        "admissionProcess": "Prospective students passionate about arts and creativity can apply online through the institute's website or submit their portfolios. Admissions are based on artistic talent, portfolio review, and interviews with faculty members.",
+        "events": {
+            "one":{
+                "name": "Art Exhibition",
+                "date": "October 30, 2023",
+                "description": "A showcase of paintings, sculptures, and multimedia artworks created by students and renowned artists, attracting art enthusiasts from across the region."
+              },
+              "two":{
+                "name": "Creative Writing Workshop",
+                "date": "November 15-17, 2023",
+                "description": "Esteemed authors and poets lead writing workshops, inspiring students to explore their literary talents and experiment with different writing styles."
+              },
+              "three":{
+                "name": "Film Festival",
+                "date": "December 10-12, 2023",
+                "description": "A celebration of independent films and student productions, providing a platform for emerging filmmakers to showcase their unique narratives and storytelling techniques."
+              },
+              "fore":{
+                "name": "Fashion Show",
+                "date": "February 25, 2024",
+                "description": "The culmination of fashion design programs, where students unveil their creative and innovative collections on the runway, attended by industry professionals and fashion enthusiasts."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 1965,
+          "notableDiscoveries": {
+            "one":"Revolutionary art technique",
+            "two":"Influential literary analysis"
+          },
+          "description": "The Art Institute of Creativity fosters an environment where students and faculty collaborate on groundbreaking art projects, pioneering new techniques, and exploring the intersection of art with various disciplines."
+    },
+        
+        "sports": {
+            "one":"Paintball",
+            "two":"Dance",
+            "three":"Yoga",
+            "fore":"Archery"
+        },
+        "sportsFacilities": "The institute encourages creative expression through sports and physical activities. Students can unwind and build camaraderie through dance classes, archery sessions, and paintball tournaments held in dedicated areas on campus."
+      },
+      {
+        "collegeImage": "https://img.freepik.com/free-photo/building-lake_1127-3045.jpg?w=826&t=st=1690028149~exp=1690028749~hmac=fb91d9f820509451efa29db465eda711fdc3d4469425050d97dd07dc68edf431",
+        "collegeName": "Medical University of Health Sciences",
+        "collegeRating": "4.5",
+        "admissionDates": {
+          "fall": "July 2023",
+          "spring": "January 2024"
+        },
+        "admissionProcess": "Aspiring medical students apply through a centralized medical admissions system, providing academic transcripts, references, and a statement of purpose. Admissions are highly competitive, and successful candidates undergo interviews and aptitude tests.",
+        "events": {
+            "one":{
+                "name": "Medical Symposium",
+                "date": "August 5-7, 2023",
+                "description": "An annual gathering of medical professionals, faculty, and students discussing the latest medical research, innovations, and healthcare challenges."
+              },
+              "two":{
+                "name": "Health Fair",
+                "date": "September 15, 2023",
+                "description": "A community outreach event offering free health check-ups, screenings, and educational workshops on various health topics."
+              },
+              "three":{
+                "name": "Medical Research Conference",
+                "date": "October 20-22, 2023",
+                "description": "Researchers present their scientific findings in areas like pharmacology, genetics, and public health, encouraging collaboration and knowledge sharing."
+              },
+             "fore" :{
+                "name": "Nursing Workshop",
+                "date": "November 10-12, 2023",
+                "description": "Nursing students gain practical skills and knowledge through interactive workshops led by experienced nursing professionals."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 1978,
+          "notableDiscoveries": {
+            "one":"Breakthrough in gene therapy",
+            "two":"Pioneering surgical techniques"
+          },
+          "description": "The Medical University of Health Sciences is renowned for cutting-edge medical research and innovation. Its contributions to healthcare have significantly improved patient outcomes and advanced medical practices worldwide."
+    },
+        "sports": {
+            "one":"Basketball",
+            "two":"Tennis",
+            "three":"Swimming",
+            "fore":"Volleyball"
+        },
+        "sportsFacilities": "The university encourages a healthy lifestyle among students and faculty. The campus features a modern sports complex, where individuals can engage in sports like basketball, tennis, swimming, and volleyball, promoting physical well-being."
+      },
+      {
+        "collegeImage": "https://img.freepik.com/free-photo/street-view-frankfurt-downtown-germany_1268-20879.jpg?w=740&t=st=1690028207~exp=1690028807~hmac=25331d9bc8673b5039aa639f5273967f0b1b65591031915c7d1f3cb5b778c8f1",
+        "collegeName": "Business School of Entrepreneurship",
+        "collegeRating": "4.5",
+        "admissionDates": {
+          "fall": "September 2023",
+          "spring": "January 2024"
+        },
+        "admissionProcess": "Prospective entrepreneurs and business leaders apply online, submitting academic transcripts, resumes, and business ideas. The admissions process includes an interview and evaluation of the applicant's entrepreneurial mindset and business acumen.",
+        "events": {
+            "one":{
+                "name": "Entrepreneurship Summit",
+                "date": "October 5-7, 2023",
+                "description": "A premier event featuring keynote speeches, panel discussions, and networking opportunities for aspiring entrepreneurs to gain insights and make valuable connections."
+              },
+              "two":{
+                "name": "Business Plan Competition",
+                "date": "November 15, 2023",
+                "description": "Teams present their business plans to a panel of experienced entrepreneurs and investors, competing for funding and mentorship to kick-start their ventures."
+              },
+              "three":{
+                "name": "Startup Incubator",
+                "date": "Ongoing",
+                "description": "The institute provides a startup incubator program, offering mentorship, resources, and office space to help students turn their business ideas into successful startups."
+              },
+              "fore":{
+                "name": "Marketing Conference",
+                "date": "January 25-27, 2024",
+                "description": "Industry leaders share marketing strategies, digital trends, and branding insights to equip students with the latest marketing skills and knowledge."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 1987,
+          "notableDiscoveries": {
+            "one":"Innovative marketing strategies",
+            "two":"Success stories of renowned entrepreneurs"
+          },
+          "description": "The Business School of Entrepreneurship fosters a culture of innovation and equips students with the skills to succeed in the dynamic world of business. Many of its graduates have become successful entrepreneurs and industry leaders."
+        },
+        "sports": {
+            "one":"Basketball",
+            "two":"Soccer",
+            "three":"Tennis",
+            "fore":"Golf"
+        },
+        "sportsFacilities": "The institute encourages a healthy work-life balance, with sports facilities like basketball courts, soccer fields, tennis courts, and a mini-golf course on campus, where students can enjoy recreational activities and build teamwork skills."
+      },
+      {
+        "collegeImage": "https://img.freepik.com/free-photo/wide-angle-shot-schonbrunn-palace-vienna-austria-with-cloudy-blue-sky_181624-9096.jpg?w=740&t=st=1690028258~exp=1690028858~hmac=0d7b578c6b6b9964dd186dd8e09eaeb7ccb1805c7c8aacc749352011572ae096",
+        "collegeName": "Environmental Institute of Sustainability",
+        "collegeRating": "4",
+        "admissionDates": {
+          "fall": "August 2023",
+          "spring": "January 2024"
+        },
+        "admissionProcess": "Prospective students interested in environmental studies can apply online or through a physical application. Admissions take into account academic records, letters of recommendation, and a personal statement outlining the applicant's commitment to environmental conservation.",
+        "events": {
+            "one":{
+                "name": "Environmental Conference",
+                "date": "September 20-22, 2023",
+                "description": "Prominent environmentalists, scientists, and policymakers convene to discuss pressing environmental issues and potential solutions."
+              },
+              "two":{
+                "name": "Sustainable Development Workshop",
+                "date": "October 10-12, 2023",
+                "description": "Students participate in hands-on workshops to learn about sustainable practices, renewable energy, and eco-friendly innovations."
+              },
+             "three" :{
+                "name": "Climate Action Campaign",
+                "date": "November 5-7, 2023",
+                "description": "An initiative to raise awareness about climate change and inspire collective action for a more sustainable future."
+              },
+              "fore":{
+                "name": "Wildlife Conservation Seminar",
+                "date": "December 15, 2023",
+                "description": "Experts share insights into wildlife conservation efforts and the importance of biodiversity conservation."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 2000,
+          "notableDiscoveries": {
+            "one":"Impactful climate change research",
+            "two":"Advancements in renewable energy"
+          },
+          "description": "The Environmental Institute of Sustainability is dedicated to advancing environmental research and driving sustainable practices. Its research has contributed to global efforts to combat climate change and protect our natural resources."
+        },
+        "sports": {
+          "one":"Hiking",
+          "two":"Rock Climbing",
+          "three":"Kayaking",
+          "fore":"Soccer"
+        },
+        "sportsFacilities": "The college encourages outdoor activities to connect students with nature. With easy access to nearby trails, students can go hiking, rock climbing, and kayaking. Soccer enthusiasts can participate in friendly matches on the college's green fields."
+      },
+      {
+        "collegeImage": "https://img.freepik.com/free-photo/aerial-view-sofia-square-mykhailivska-square-kiev-ukraine_1153-5728.jpg?w=826&t=st=1690028308~exp=1690028908~hmac=95b220141db1722c662984d654cdbbb0580fbef63c380769d622705e296dfadc",
+        "collegeName": "Music Academy of Harmony",
+        "collegeRating": "4.5",
+        "admissionDates": {
+          "fall": "October 2023",
+          "spring": "March 2024"
+        },
+        "admissionProcess": "Prospective music students must audition, demonstrating their musical talents and passion. Applications are reviewed by a panel of music faculty, and successful candidates are offered admission based on their performance and potential.",
+        "events": {
+            "one":{
+                "name": "Music Festival",
+                "date": "October 25-28, 2023",
+                "description": "A celebration of music featuring performances by students, faculty, and guest artists in various genres and styles."
+              },
+              "two":{
+                "name": "Masterclasses with Renowned Musicians",
+                "date": "November 10-12, 2023",
+                "description": "Famous musicians conduct masterclasses, providing valuable insights and guidance to aspiring musicians."
+              },
+              "three":{
+                "name": "Composition Contest",
+                "date": "January 15, 2024",
+                "description": "Composers submit their original musical compositions for a chance to have their work performed by the college's symphony orchestra."
+              },
+              "fore":{
+                "name": "Choir Performance",
+                "date": "February 20, 2024",
+                "description": "The college choir presents a captivating performance, showcasing the harmonious blend of voices in choral music."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 1958,
+          "notableDiscoveries": {
+            "one":"Influential music theories",
+            "two":"Rediscovery of classical compositions"
+          },
+          "description": "The Music Academy of Harmony is renowned for its contribution to music education and research. Its faculty and students explore the rich heritage of music while pioneering new approaches to music theory and performance."
+        },
+        "sports": {
+          "one":"Music-themed Quizzes",
+          "two":"Dance",
+          "three":"Yoga",
+          "fore":"Tennis"
+        },
+        "sportsFacilities": "The academy fosters a vibrant community of musicians who enjoy recreational activities related to music and movement. Students participate in music-themed quizzes, dance classes, and yoga sessions, which enhance their artistic expression and well-being."
+      },
+      {
+        "collegeImage": "https://img.freepik.com/free-photo/quebec-city-skyline-river-with-blue-sky-cloud_649448-1889.jpg?w=740&t=st=1690028333~exp=1690028933~hmac=87e1053901d8a70fd60f07bcd17863c29ee654ef3fdcb5bf23dac43d0b73eb06",
+        "collegeName": "Technology Institute of Robotics",
+        "collegeRating": "4.5",
+        "admissionDates": {
+          "fall": "August 2023",
+          "spring": "January 2024"
+        },
+        "admissionProcess": "Prospective students passionate about robotics and AI must submit their academic records, recommendation letters, and a statement of purpose outlining their interest in robotics. Shortlisted candidates participate in technical interviews or robotics challenges.",
+        "events": {
+            "one":{
+                "name": "Robotics Expo",
+                "date": "September 15-17, 2023",
+                "description": "An exhibition showcasing cutting-edge robotic innovations, featuring student projects and industry advancements."
+              },
+              "two":{
+                "name": "AI and Automation Symposium",
+                "date": "October 5-6, 2023",
+                "description": "Leading experts share insights on artificial intelligence, automation, and the future of robotics in various industries."
+              },
+              "three":{
+                "name": "Drone Racing Competition",
+                "date": "November 10-12, 2023",
+                "description": "A thrilling drone racing competition where students design and pilot their custom-built racing drones."
+              },
+              "fore":{
+                "name": "Innovation Showcase",
+                "date": "December 5, 2023",
+                "description": "Students demonstrate their innovative robotic creations, from intelligent robots to automated systems."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 1995,
+          "notableDiscoveries": {
+            "one":"Breakthrough in humanoid robotics",
+            "two":"Advancements in AI ethics"
+          },
+          "description": "The Technology Institute of Robotics is at the forefront of the robotics revolution. It has contributed significantly to the development of humanoid robots and ethical considerations in AI, making it a pioneer in the field of robotics."
+        },
+        "sports": {
+          "one":"Robot Soccer",
+          "two":"Drone Flying",
+          "three":"E-Sports",
+          "fore":"Table Tennis"
+        },
+        "sportsFacilities": "The institute encourages students to explore technology-driven sports activities. Students can participate in robot soccer matches, compete in thrilling drone flying challenges, and enjoy friendly e-sports and table tennis tournaments on campus."
+      },
+      {
+        "collegeImage": "https://img.freepik.com/free-photo/ottawa-parliament-hill-building_649448-3632.jpg?w=740&t=st=1690028391~exp=1690028991~hmac=8e3179f82dd18fe40e79ebc40eebde9f0e0e17762e59c75cd1ca51e3c7b53327",
+        "collegeName": "Culinary Institute of Gastronomy",
+        "collegeRating": "4.5",
+        "admissionDates": {
+          "fall": "September 2023",
+          "spring": "February 2024"
+        },
+        "admissionProcess": "Aspiring culinary artists must submit an application along with their culinary portfolio, which should include photos of dishes they have prepared. Admissions involve a practical cooking test and an interview with faculty members.",
+        "events": {
+            "one":{
+                "name": "Food and Wine Festival",
+                "date": "September 25-28, 2023",
+                "description": "A gastronomic celebration featuring cooking demonstrations, wine tastings, and culinary competitions."
+              },
+              "two":{
+                "name": "Gourmet Cuisine Showcase",
+                "date": "November 15, 2023",
+                "description": "Students present their gourmet creations in an exclusive showcase, attended by food critics and industry professionals."
+              },
+              "three":{
+                "name": "Pastry and Dessert Competition",
+                "date": "January 10-12, 2024",
+                "description": "Talented pastry chefs compete in creating delectable desserts, showcasing their creativity and technical skills."
+              },
+              "fore":{
+                "name": "Global Culinary Exchange",
+                "date": "February 20-22, 2024",
+                "description": "A cultural exchange event where international cuisines and culinary traditions are highlighted and celebrated."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 1972,
+          "notableDiscoveries": {
+            "one":"Innovative cooking techniques",
+            "two":"Revival of traditional recipes"
+          },
+          "description": "The Culinary Institute of Gastronomy is dedicated to advancing culinary arts and preserving culinary heritage. It is known for experimenting with new cooking techniques while paying homage to time-honored culinary traditions."
+        },
+        "sports": {
+          "one":"Cooking Competitions",
+          "two":"Gardening",
+          "three":"Yoga",
+          "fore":"Table Tennis"
+        },
+        "sportsFacilities": "The college encourages creativity through cooking competitions and gardening activities. Students can also participate in yoga sessions for relaxation and friendly table tennis matches during their leisure time."
+      },
+      {
+        "collegeImage": "https://img.freepik.com/free-photo/chateau-frontenac-dusk-quebec-city_649448-1824.jpg?w=740&t=st=1690028413~exp=1690029013~hmac=d3c9f8b60b2b94379626af53c14886b21ead7a213c406d138636f6a0540424a1",
+        "collegeName": "School of Journalism and Media",
+        "collegeRating": "4.5",
+        "admissionDates": {
+          "fall": "July 2023",
+          "spring": "January 2024"
+        },
+        "admissionProcess": "Prospective journalism and media students must submit their academic records, writing samples, and demonstrate their interest in media. Admissions include written exams, interviews, and portfolio reviews.",
+        "events": {
+            "one":{
+                "name": "Journalism Symposium",
+                "date": "September 15-17, 2023",
+                "description": "Leading journalists and media professionals discuss the role of media in shaping public opinion and society."
+              },
+              "two":{
+                "name": "Media Ethics Workshop",
+                "date": "October 10-12, 2023",
+                "description": "Students engage in discussions about media ethics, accountability, and responsible journalism practices."
+              },
+              "three":{
+                "name": "Documentary Film Festival",
+                "date": "November 5-7, 2023",
+                "description": "A showcase of thought-provoking documentaries that shed light on various social, political, and environmental issues."
+              },
+              "fore":{
+                "name": "Press Freedom Conference",
+                "date": "January 20-22, 2024",
+                "description": "Journalists, academics, and activists come together to advocate for and discuss press freedom worldwide."
+              }
+        },
+        "researchHistory": {
+          "foundingYear": 1983,
+          "notableDiscoveries": {
+            "one":"Effective language learning methodologies",
+            "two":"Promotion of multilingualism"
+          },
+          "description": "The School of Journalism and Media has a proud tradition of producing responsible journalists and media professionals. Its research efforts have contributed to investigative journalism and understanding the media's role in shaping public discourse."
+        },
+        "sports": {
+          "one":"Language Olympics",
+          "two":"Chess",
+          "three":"Table Tennis",
+          "fore":"Volleyball"
+        },
+        "sportsFacilities": "The college offers intellectual sports activities, such as journalism quiz competitions and debate tournaments, where students can showcase their communication and critical thinking skills. Yoga sessions and friendly table tennis matches are also available for relaxation and recreation."
+      }
+  ]

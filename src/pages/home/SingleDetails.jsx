@@ -1,0 +1,35 @@
+import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+
+const SingleDetails = () => {
+    const singleData = useLoaderData();
+    const {collegeName,admissionProcess, admissionDates,sportsFacilities, events, researchHistory, sports, collegeImage , _id} = singleData;
+    console.log(singleData);
+    return (
+        <>
+            <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md mx-auto mt-5 mb-5">
+                <img className="object-cover w-full h-64" src={collegeImage} alt="Article" />
+                <div className="p-6">
+                    <div>
+                        <span className="text-xs font-medium text-blue-600 uppercase ">Product</span>
+                        <p className="block mt-2 text-2xl text-gray-800">{collegeName}</p>
+                        <p className="mt-2 text-sm text-gray-600 ">Admission process : {admissionProcess}</p> <br/>
+                <p className="mt-2 text-sm text-gray-600 ">Events 1 : {events.one.name} ({events.one.date}). {events.one.description}</p>
+                <p className="mt-2 text-sm text-gray-600 ">Events 2 : {events.two.name} ({events.two.date}). {events.two.description}</p>
+                <p className="mt-2 text-sm text-gray-600 ">Events 2 : {events.three.name} ({events.three.date}). {events.three.description}</p> <br/>
+                {/* research */}
+                <p className="mt-2 text-sm text-gray-600">Research History : Founding Year - {researchHistory.foundingYear}
+                <p> Notable Discoveries : {researchHistory.notableDiscoveries?.one}, {researchHistory.notableDiscoveries.two}.</p> 
+                <p>Research Description : {researchHistory.description}</p>
+                </p> <br/>
+                {/* sports */}
+                <p className="mt-2 text-sm text-gray-600">Sports : {sports?.one}, {sports?.two}, {sports?.three}, {sports?.fore}.
+                <p>Sports Facilities : {sportsFacilities}</p> </p>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default SingleDetails;
