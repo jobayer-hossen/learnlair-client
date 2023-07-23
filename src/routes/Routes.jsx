@@ -8,6 +8,10 @@ import Resister from "../pages/resisterpage/Resister";
 import SingleDetails from "../pages/home/SingleDetails";
 import Collages from "../pages/collages/Collages";
 import PrivateRoute from "./PrivateRoute";
+import Admission from "../pages/admission/Admission";
+import AdmissionForm from "../pages/admission/AdmissionForm";
+import MyCollege from "../pages/mycollege/MyCollege";
+import UserProfile from "../pages/profile/UserProfile";
 
 const router= createBrowserRouter([
     {
@@ -18,7 +22,7 @@ const router= createBrowserRouter([
             {
                 path:'/',
                 element:<Home/>,
-                loader:()=> fetch('http://localhost:8000/getData')
+                loader:()=> fetch('https://learn-lair-server-emonhasan007.vercel.app/getData')
             },
             {
                 path:'/login',
@@ -31,17 +35,31 @@ const router= createBrowserRouter([
             {
                 path:'/details/:id',
                 element:<PrivateRoute><SingleDetails/></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:8000/getData/${params.id}`)
+                loader: ({params}) => fetch(`https://learn-lair-server-emonhasan007.vercel.app/getData/${params.id}`)
             },
             {
                 path:'/colleges',
                 element:<Collages/>,
-                loader:()=> fetch('http://localhost:8000/getData')
+                loader:()=> fetch('https://learn-lair-server-emonhasan007.vercel.app/getData')
+            },
+            {
+                path:'/admission',
+                element:<Admission/>,
+                loader:()=> fetch('https://learn-lair-server-emonhasan007.vercel.app/getData')
+            },
+            {
+                path:'/admission/:id',
+                element:<AdmissionForm/>,
+                loader: ({params}) => fetch(`https://learn-lair-server-emonhasan007.vercel.app/getData/${params.id}`)
+            },
+            {
+                path:'/myCollege',
+                element:<MyCollege/>
             },
             {
                 path:'/profile',
-                
-            },
+                element:<UserProfile/>
+            }
             
         ]
     }

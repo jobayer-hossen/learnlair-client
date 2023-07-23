@@ -4,7 +4,7 @@ import SingleCollege from './SingleCollege';
 
 const Collages = () => {
     const allData = useLoaderData();
-    console.log(allData);
+    // console.log(allData);
     return (
     <>
       <div className='grid lg:grid-cols-2 sm:grid-cols-1 w-[90%] mx-auto gap-5 mt-5 mb-5'>

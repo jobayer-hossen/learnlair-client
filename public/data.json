@@ -2,6 +2,7 @@
     {
       "collegeImage": "https://img.freepik.com/free-photo/hotel_1127-4043.jpg?w=740&t=st=1690024531~exp=1690025131~hmac=ab66ff526478758444e383cdbd894fb92d327ffefc56ef47f97bbe1f64619be0",
       "collegeName": "University of Exampleville",
+      "collegeDetails": "University of Exampleville, established in 1950, is a prestigious institution at the forefront of pioneering research in astronomy and cancer studies. With cutting-edge sports facilities, students can enjoy activities such as football and tennis. The university hosts notable events like the Science Exhibition, Career Fair, and Alumni Reunion, fostering a vibrant and engaging academic community.",
       "collegeRating": "4.5",
       "admissionDates": {
         "fall": "September 2023",
@@ -49,6 +50,7 @@
     {
       "collegeImage": "https://img.freepik.com/free-photo/architecture-independence-palace-ho-chi-minh-city_181624-21243.jpg?w=740&t=st=1690024724~exp=1690025324~hmac=72bf2f03990052a4afdbe02d5b8f2b600b1c904f5fb6ccf9f0fa0a69a26df496",
       "collegeName": "Tech Institute of Innovation",
+      "collegeDetails": "Tech Institute of Innovation is a cutting-edge institution dedicated to technological advancements and creativity. Founded in 1985, it offers state-of-the-art labs, fostering research in AI, robotics, and renewable energy. With a focus on innovation, students engage in coding challenges, hackathons, and entrepreneurial workshops, empowering them to shape the future through technology.",
       "collegeRating": "4",
       "admissionDates": {
         "fall": "August 2023",
@@ -96,6 +98,7 @@
     {
         "collegeImage": "https://img.freepik.com/free-photo/aerial-view-residence-bukovinian-dalmatian-metropolitans-chernivtsi-national-university-chernivtsi-touristic-destination-western-ukraine_231208-48.jpg?w=826&t=st=1690027869~exp=1690028469~hmac=af120e3931caed8fe8915888293ec4c8806fbe7e0d38e5679fc43b8dd76c5d21",
         "collegeName": "Art Institute of Creativity",
+        "collegeDetails":"Art Institute of Creativity, founded in 1965, is a leading hub for artistic expression and innovation. It offers diverse programs in visual arts, literature, and multimedia. The institute encourages collaboration and experimentation, leading to revolutionary art techniques and influential literary analyses. Students showcase their talents through art exhibitions, film festivals, and fashion shows, making a mark in the creative world.",
         "collegeRating": "4.5",
         "admissionDates": {
           "fall": "October 2023",
@@ -144,7 +147,8 @@
       {
         "collegeImage": "https://img.freepik.com/free-photo/building-lake_1127-3045.jpg?w=826&t=st=1690028149~exp=1690028749~hmac=fb91d9f820509451efa29db465eda711fdc3d4469425050d97dd07dc68edf431",
         "collegeName": "Medical University of Health Sciences",
-        "collegeRating": "4.5",
+        "collegeDetails":"Medical University of Health Sciences, established in 1978, is a renowned institution for medical education and research. It excels in cutting-edge medical research, including gene therapy and advanced surgical techniques. The university hosts medical symposiums, health fairs, and research conferences, fostering collaboration and innovation among medical professionals, faculty, and students.",
+        "collegeRating": "4",
         "admissionDates": {
           "fall": "July 2023",
           "spring": "January 2024"
@@ -191,6 +195,7 @@
       {
         "collegeImage": "https://img.freepik.com/free-photo/street-view-frankfurt-downtown-germany_1268-20879.jpg?w=740&t=st=1690028207~exp=1690028807~hmac=25331d9bc8673b5039aa639f5273967f0b1b65591031915c7d1f3cb5b778c8f1",
         "collegeName": "Business School of Entrepreneurship",
+        "collegeDetails":"Business School of Entrepreneurship, founded in 1987, empowers aspiring entrepreneurs with business acumen and innovative thinking. The school hosts entrepreneurship summits, business plan competitions, and startup incubator programs, nurturing students' ventures. Notable alumni share success stories, while marketing conferences equip students with the latest industry insights. With a focus on creativity and leadership, graduates emerge as successful entrepreneurs and business leaders.",
         "collegeRating": "4.5",
         "admissionDates": {
           "fall": "September 2023",
@@ -238,6 +243,7 @@
       {
         "collegeImage": "https://img.freepik.com/free-photo/wide-angle-shot-schonbrunn-palace-vienna-austria-with-cloudy-blue-sky_181624-9096.jpg?w=740&t=st=1690028258~exp=1690028858~hmac=0d7b578c6b6b9964dd186dd8e09eaeb7ccb1805c7c8aacc749352011572ae096",
         "collegeName": "Environmental Institute of Sustainability",
+        "collegeDetails":"Environmental Institute of Sustainability, established in 2000, is dedicated to advancing environmental studies and sustainable practices. Its research contributions include impactful climate change studies and advancements in renewable energy. The institute hosts environmental conferences, sustainability workshops, and wildlife conservation seminars, inspiring students to become champions for the planet. With a focus on green initiatives, graduates lead in preserving the Earth's natural resources.",
         "collegeRating": "4",
         "admissionDates": {
           "fall": "August 2023",
@@ -285,6 +291,7 @@
       {
         "collegeImage": "https://img.freepik.com/free-photo/aerial-view-sofia-square-mykhailivska-square-kiev-ukraine_1153-5728.jpg?w=826&t=st=1690028308~exp=1690028908~hmac=95b220141db1722c662984d654cdbbb0580fbef63c380769d622705e296dfadc",
         "collegeName": "Music Academy of Harmony",
+      "collegeDetails":" Music Academy of Harmony, founded in 1958, is a prestigious institution fostering musical excellence and creativity. With renowned faculty, it offers diverse programs in music theory, performance, and composition. The academy hosts music festivals, masterclasses with famous musicians, and competitions, empowering students to showcase their artistic talents. Its research explores innovative music theories and rekindles classical compositions for modern audiences.",
         "collegeRating": "4.5",
         "admissionDates": {
           "fall": "October 2023",
@@ -332,7 +339,8 @@
       {
         "collegeImage": "https://img.freepik.com/free-photo/quebec-city-skyline-river-with-blue-sky-cloud_649448-1889.jpg?w=740&t=st=1690028333~exp=1690028933~hmac=87e1053901d8a70fd60f07bcd17863c29ee654ef3fdcb5bf23dac43d0b73eb06",
         "collegeName": "Technology Institute of Robotics",
-        "collegeRating": "4.5",
+        "collegeDetails":"Technology Institute of Robotics, established in 1995, is a leading hub for cutting-edge robotics and AI research. It excels in humanoid robotics and advancements in AI ethics. The institute hosts robotics expos, AI symposiums, and drone racing competitions, promoting innovation and technological advancement. With a focus on hands-on learning, students engage in robot soccer, drone flying, and e-sports, preparing them for future technological challenges.",
+        "collegeRating": "4",
         "admissionDates": {
           "fall": "August 2023",
           "spring": "January 2024"
@@ -379,6 +387,7 @@
       {
         "collegeImage": "https://img.freepik.com/free-photo/ottawa-parliament-hill-building_649448-3632.jpg?w=740&t=st=1690028391~exp=1690028991~hmac=8e3179f82dd18fe40e79ebc40eebde9f0e0e17762e59c75cd1ca51e3c7b53327",
         "collegeName": "Culinary Institute of Gastronomy",
+        "collegeDetails":"Culinary Institute of Gastronomy, founded in 1992, is a culinary haven for aspiring chefs and gastronomy enthusiasts. With a focus on creativity and innovation, students participate in food and wine festivals, gourmet cuisine showcases, and pastry competitions. The institute fosters sustainable practices, exploring culinary arts' potential for social change. Its research includes innovative cooking techniques and preserving traditional recipes.",
         "collegeRating": "4.5",
         "admissionDates": {
           "fall": "September 2023",
@@ -426,6 +435,7 @@
       {
         "collegeImage": "https://img.freepik.com/free-photo/chateau-frontenac-dusk-quebec-city_649448-1824.jpg?w=740&t=st=1690028413~exp=1690029013~hmac=d3c9f8b60b2b94379626af53c14886b21ead7a213c406d138636f6a0540424a1",
         "collegeName": "School of Journalism and Media",
+        "collegeDetails":"School of Journalism and Media, established in 1985, is a prominent institution shaping future media professionals. With a commitment to responsible journalism, students engage in media ethics workshops and documentary film festivals. The school hosts journalism symposiums, promoting the role of media in shaping public opinion. Its research explores the impact of media on society and advocates for press freedom worldwide.",
         "collegeRating": "4.5",
         "admissionDates": {
           "fall": "July 2023",
@@ -470,4 +480,4 @@
         },
         "sportsFacilities": "The college offers intellectual sports activities, such as journalism quiz competitions and debate tournaments, where students can showcase their communication and critical thinking skills. Yoga sessions and friendly table tennis matches are also available for relaxation and recreation."
       }
-  ]
+]

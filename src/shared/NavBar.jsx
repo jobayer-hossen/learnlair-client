@@ -13,20 +13,16 @@ const NavBar = () => {
       <div className="relative mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
         <nav
           aria-label="main navigation"
-          className="flex h-[4.5 rem] items-stretch justify-between font-medium text-slate-700"
+          className="flex h-[6.5 rem] items-stretch justify-between font-medium text-slate-700"
           role="navigation"
         >
           {/*      <!-- Brand logo --> */}
-          <a
-            id="WindUI"
-            aria-label="WindUI logo"
-            aria-current="page"
-            className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
-         
-          >
-            
-            LearnLair
-          </a>
+          <div className='flex justify-end w-[40%] items-start mt-3'>
+              <div className='flex items-center'><img className='w-[8%] logo ' src="https://i.ibb.co/K7dfPJz/lebanese-7631380.png" alt="" />
+              <p className='text-3xl ms-5 text-blue-500' >LearnLair</p>
+              </div>
+            </div>
+          
           {/*      <!-- Mobile trigger --> */}
           <button
             className={`relative order-10 block h-10 w-10 self-center lg:hidden
@@ -92,6 +88,7 @@ const NavBar = () => {
             </li>
             <li role="none" className="flex items-stretch">
               <NavLink
+              to='/admission'
                 role="menuitem"
                 aria-current="page"
                 aria-haspopup="false"
@@ -104,6 +101,7 @@ const NavBar = () => {
             </li>
             <li role="none" className="flex items-stretch">
               <NavLink
+              to='/myCollege'
                 role="menuitem"
                 aria-current="page"
                 aria-haspopup="false"

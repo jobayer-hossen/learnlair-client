@@ -4,7 +4,7 @@ const Footer = () => {
     return (
     <>
       <footer className="bg-blue-200 ">
-    <div className="container px-6 py-12 mx-auto">
+    <div className="container px-6 py-5 mx-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
                 <h1 className="max-w-lg text-xl tracking-tight text-gray-800 xl:text-2xl">Subscribe our newsletter to get update.</h1>
@@ -42,9 +42,11 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700"/>
         
         <div className="flex items-center justify-between">
-            {/* <a href="#">
-                <img className="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt=""/>
-            </a> */}
+        <div className='flex justify-end w-[40%] items-start mt-3'>
+              <div className='flex items-center'><img className='w-[10%] logo ' src="https://i.ibb.co/K7dfPJz/lebanese-7631380.png" alt="" />
+              <p className='text-3xl ms-5 text-blue-500' >LearnLair</p>
+              </div>
+            </div>
             
             <div className="flex -mx-2">
                 <a href="#" className="mx-2 text-gray-600 transition-colors duration-30 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">

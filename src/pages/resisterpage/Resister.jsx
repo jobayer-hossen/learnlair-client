@@ -93,7 +93,7 @@ const Resister = () => {
                         </div>
 
                     </div>
-                    <button type="submit" className="w-full text-blue-500 px-8 py-3  rounded-md ">Resister</button>
+                    <button type="submit" className="w-full bg-blue-100 text-blue-500 px-8 py-3  rounded-md ">Resister</button>
                 </form>
       </div>  
 

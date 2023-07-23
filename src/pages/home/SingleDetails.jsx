@@ -4,10 +4,10 @@ import { useLoaderData } from 'react-router-dom';
 const SingleDetails = () => {
     const singleData = useLoaderData();
     const {collegeName,admissionProcess, admissionDates,sportsFacilities, events, researchHistory, sports, collegeImage , _id} = singleData;
-    console.log(singleData);
+    // console.log(singleData);
     return (
         <>
-            <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md mx-auto mt-5 mb-5">
+            <div className="w-full overflow-hidden bg-white rounded-lg shadow-md mx-auto mt-5 mb-5">
                 <img className="object-cover w-full h-64" src={collegeImage} alt="Article" />
                 <div className="p-6">
                     <div>

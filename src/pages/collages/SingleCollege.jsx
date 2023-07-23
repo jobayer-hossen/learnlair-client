@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleCollege = ({data}) => {
     const { collegeName,collegeRating, admissionDates, events, researchHistory, sports, collegeImage , _id} = data;
@@ -24,9 +25,13 @@ const SingleCollege = ({data}) => {
           </header>
           <p className="leading-relaxed">Admission Date : {admissionDates?.fall} - {admissionDates?.spring}.
           </p>
-          <p className="leading-relaxed">Number of Research  : {admissionDates?.fall} - {admissionDates?.spring}.
+          <p className="leading-relaxed">Number of Research  : {researchHistory.notableDiscoveries?.one}, {researchHistory.notableDiscoveries.two}.
           </p>
         </div>
+        <Link to={`/details/${_id}`}>
+                            <div className="flex">
+                                <button className=" mx-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Details</button>
+          </div></Link>
       </div>
       {/*<!-- End Basic blog card --> */}        
     </>
