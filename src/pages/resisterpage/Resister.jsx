@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import Lottie from "lottie-react";
 import resisterAnimation from '../../../public/resister/animation_lkdqax2a.json'
+import useTitle from '../../components/hooks/useTitle';
+import Swal from 'sweetalert2';
 
 const Resister = () => {
+    useTitle('Resister');
     const {createNewUser,updateProfile} = useContext(AuthContext);
     const [error, setError] = useState('');
     const [success ,setSuccess] = useState('')
@@ -39,6 +42,12 @@ const Resister = () => {
                 console.log(newUser);
                 updateUserProfile(result.user, name, photo);
                 setError('');
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Your account resister Successfully!',
+                    icon: 'success',
+                    confirmButtonText: 'Okay'
+                })
             })
             .catch(error => 
                 console.log(error)
@@ -63,11 +72,11 @@ const Resister = () => {
     };
     return (
     <>
-    <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
+    <div className='grid lg:grid-cols-2 sm:grid-cols-1 mb-6 mt-6'>
     <div className="w-full mx-auto relative max-w-md p-4 rounded-md shadow-2xl sm:p-8">
                 <h2 className="mb-3 text-3xl font-semibold text-center">Resister your account</h2>
                 
-                <form onSubmit={handleResister} className="space-y-8 ng-untouched ng-pristine ng-valid">
+                <form onSubmit={handleResister} className="space-y-8 ng-untouched ng-pristine ng-valid mb-5">
                     <div className="space-y-4">
                         <div className="space-y-2">
                             <label htmlFor="text" className="block text-sm">Name</label>

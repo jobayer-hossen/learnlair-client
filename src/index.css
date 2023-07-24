@@ -26,3 +26,18 @@
     animation: logo-spin infinite 7s linear;
   }
 }
+
+.animation-two {
+  animation: upDown 3s linear infinite;
+}
+@keyframes upDown {
+    0% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}

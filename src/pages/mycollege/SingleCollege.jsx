@@ -4,6 +4,7 @@ import React, { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../provider/AuthProvider';
 import { useNavigate } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 const SingleCollege = ({data}) => {
     const {user} = useContext(AuthContext);
@@ -57,6 +58,7 @@ const SingleCollege = ({data}) => {
     }
     return (
     <>
+    <Fade bottom>
       <section className="text-gray-600 w-[90%] body-font overflow-hidden mx-auto mt-8 mb-8 shadow-xl">
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
                     <div>
@@ -130,7 +132,7 @@ const SingleCollege = ({data}) => {
       {/*<!-- End Rounded large size textarea with helper text --> */}
                     </div>
                 </div>
-            </section>      
+            </section>  </Fade>    
     </>
     );
 };

@@ -1,8 +1,10 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import SingleAdmission from './SingleAdmission';
+import useTitle from '../../components/hooks/useTitle';
 
 const Admission = () => {
+    useTitle('Admission');
     const allData = useLoaderData();
     return (
         <>

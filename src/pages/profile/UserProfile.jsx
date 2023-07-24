@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 import SingleUserAdmissionData from './SingleUserAdmissionData';
+import useTitle from '../../components/hooks/useTitle';
 
 const UserProfile = () => {
+  useTitle('Profile');
     const {user,logOutUser} = useContext(AuthContext);
 
     const [collegeData, setCollegeData] = useState([]);

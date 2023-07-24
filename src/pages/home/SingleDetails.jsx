@@ -1,7 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import useTitle from '../../components/hooks/useTitle';
 
 const SingleDetails = () => {
+    useTitle('Details');
     const singleData = useLoaderData();
     const {collegeName,admissionProcess, admissionDates,sportsFacilities, events, researchHistory, sports, collegeImage , _id} = singleData;
     // console.log(singleData);

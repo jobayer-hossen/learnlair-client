@@ -2,8 +2,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import useTitle from '../../components/hooks/useTitle';
 
 const EditForm = () => {
+  useTitle('Update Form');
     const getData = useLoaderData();
     const {collegeImage,collegeName,candidateName,subjectName,candidateEmail,phoneNumber,address,dateOfBirth,_id,collegeDetails,image}= getData;
     const { register, handleSubmit, reset } = useForm();
@@ -27,7 +29,7 @@ const EditForm = () => {
                 })
                     .then(res => res.json())
                     .then(data => {
-                        // console.log(data)
+                        
                         if (data.insertedId) {
                             reset();
                             Swal.fire({
@@ -49,7 +51,7 @@ const EditForm = () => {
         {/*  <!-- Body--> */}
         <div className="p-6">
           <header className="mb-4 text-center">
-            <h3 className="text-xl font-medium text-slate-700">{collegeName} college admission form</h3>
+            <h3 className="text-xl font-medium text-slate-700">{collegeName} <br/> college admission candidate information update form</h3>
           </header>
           <div className="flex flex-col">
             {/*      <!-- Input field --> */}

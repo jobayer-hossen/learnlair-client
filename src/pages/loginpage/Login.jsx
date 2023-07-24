@@ -1,11 +1,16 @@
-import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useRef, useState } from 'react';
+import { Link, useNavigation } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import Lottie from "lottie-react";
 import loginAnimation from '../../../public/login/animation_lkdqngcl.json'
+import useTitle from '../../components/hooks/useTitle';
+import Swal from 'sweetalert2';
 
 const Login = () => {
-    const {emailSignIn,googleLogin,githubLogin}= useContext(AuthContext);
+    useTitle('Login');
+    const navigate = useNavigation();
+    const {emailSignIn,googleLogin,githubLogin,resetPassword}= useContext(AuthContext);
+    const emailRef = useRef();
     const [error, setError] = useState('');
     const [success ,setSuccess] = useState('')
     const handleLogin = (event) =>{
@@ -43,16 +48,41 @@ const Login = () => {
                 setError(error.message);
                 setError('Password Dose not match')
             })
+            
     }
+    const handleResetPassword =() =>{
+        const email = emailRef.current.value
+        if(!email){
+            alert('Please provide valid email')
+            return;
+        }
+        resetPassword(email)
+        .then(() => {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your account log in Successfully!',
+                icon: 'success',
+                confirmButtonText: 'Okay'
+            })
+        })
+        .catch(error => console.error(error));
+    }
+    
     // Google login --
     const handleGithub = () => {
         githubLogin()
         .then(result => {
-            const facebookUser = result.user;
-            console.log(facebookUser);
+            const githubUser = result.user;
+            console.log(githubUser);
             // setSuccess("Welcome back ! Your Google account successfully logged .");
             // setError('');
             // navigate(from, { replace: true });
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your account log in Successfully!',
+                icon: 'success',
+                confirmButtonText: 'Okay'
+            })
         })
         .catch(error => {
             console.log(error)
@@ -68,7 +98,14 @@ const Login = () => {
             console.log(googleUser);
             // setSuccess("Welcome back ! Your Google account successfully logged .");
             // setError('');
-            // navigate(from, { replace: true });
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your account log in Successfully!',
+                icon: 'success',
+                confirmButtonText: 'Okay'
+            })
+            navigate(from, { replace: true });
+
         })
         .catch(error => {
             console.log(error)
@@ -88,12 +125,15 @@ const Login = () => {
                     <div className="space-y-4">
                         <div className="space-y-2">
                             <label htmlFor="email" className="block text-sm">Email</label>
-                            <input type="email" name="email" id="email" placeholder="example@company.com" className="w-full px-3 py-2 border rounded-md " />
+                            <input ref={emailRef} type="email" name="email" id="email" placeholder="example@company.com" className="w-full px-3 py-2 border rounded-md " />
                         </div>
                         <div className="space-y-2">
                             <label htmlFor="password" className="text-sm">Password</label>
                             <input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md " />
                         </div>
+                        
+                        <button className='text-center' onClick={handleResetPassword}>Forget Password</button>
+                        
 
                         <div className="flex items-center w-full my-4">
                             <hr className="w-full text-black" />

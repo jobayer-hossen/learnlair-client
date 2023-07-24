@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 const CollageCard = ({ data }) => {
     const { collegeName, admissionDates, events, collegeRating, researchHistory, sports, collegeImage, _id } = data;
     return (
         <>
-            <div className=" w-[90%] p-6 rounded-md shadow-2xl mx-auto bg-blue-50 mt-4">
+        <Fade bottom>
+            <div className=" w-[90%] p-6 rounded-md shadow-2xl mx-auto mt-4">
                 <img src={collegeImage} alt="" className=" object-cover object-center w-full rounded-md h-72 " />
                 <div className="mt-6 mb-2 text-gray-700">
                     <h2 className="text-xl text-gray-700 text-center mb-5">{collegeName}</h2>
@@ -22,7 +24,7 @@ const CollageCard = ({ data }) => {
                                     </div></Link>
                 </div>
             </div>
-
+            </Fade>
 
         </>
     );

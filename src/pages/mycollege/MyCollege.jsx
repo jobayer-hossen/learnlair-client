@@ -2,8 +2,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import SingleCollege from './SingleCollege';
 import { AuthContext } from '../../provider/AuthProvider';
+import useTitle from '../../components/hooks/useTitle';
 
 const MyCollege = () => {
+    useTitle('My College');
     const {user} = useContext(AuthContext);
     const [collegeData, setCollegeData] = useState([]);
     useEffect(()=>{

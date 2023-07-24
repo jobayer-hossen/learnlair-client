@@ -3,12 +3,14 @@ import { useForm } from 'react-hook-form';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../../provider/AuthProvider';
+import useTitle from '../../components/hooks/useTitle';
 
 
 const imageToken = import.meta.env.VITE_imageBB_Token;
 const imageURLApi = `https://api.imgbb.com/1/upload?key=${imageToken}`
 
 const AdmissionForm = () => {
+  useTitle('Admission Form');
     const {user} = useContext(AuthContext);
     
     const getData = useLoaderData();

@@ -1,8 +1,9 @@
 import React from 'react';
-
+import Fade from 'react-reveal/Fade';
 const GraduateGallery = () => {
     return (
         <>
+        <Fade bottom>
             <p className="text-3xl mt-16 text-center">Graduate Gallery</p>
             <p className='text-center'>"Welcome to our Graduate Gallery, showcasing the exceptional works of our talented graduates.<br/> Explore creativity, innovation, and passion brought to life in diverse disciplines. Enjoy the artistry!"</p>
 
@@ -94,6 +95,7 @@ const GraduateGallery = () => {
 
                 </div>
             </div>
+            </Fade>
         </>
     );
 };
