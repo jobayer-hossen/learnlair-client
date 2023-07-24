@@ -12,7 +12,7 @@ const CollageCard = ({ data }) => {
                 <div className="mt-6 mb-2 text-gray-700">
                     <h2 className="text-xl text-gray-700 text-center mb-5">{collegeName}</h2>
                     <span className="leading-relaxed">Admission Date : {admissionDates?.fall} - {admissionDates?.spring}</span><br />
-                                <span className="leading-relaxed">Events : <span className='text-sm'>{events.one.name}, {events.two.name}, {events.three.name}.</span> </span><br />
+                                <span className="leading-relaxed">Events : {events.one.name}, {events.two.name}, {events.three.name}.</span><br />
                                 <span className="leading-relaxed">Research History : Founding Year - {researchHistory?.foundingYear} <br />
                                     Notable Discoveries : {researchHistory?.notableDiscoveries?.one}, {researchHistory?.notableDiscoveries?.two}
                                 </span><br />
