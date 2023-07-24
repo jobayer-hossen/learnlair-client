@@ -3,8 +3,13 @@ import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 
 const NavBar = () => {
-  const {user} = useContext(AuthContext);
-    const [isToggleOpen, setIsToggleOpen] = useState(false)
+  const {user,logOutUser} = useContext(AuthContext);
+    const [isToggleOpen, setIsToggleOpen] = useState(false);
+    const handleLogout = ()=>{
+      logOutUser()
+      .then()
+      .catch(error => {console.error(error)});
+    }
     return (
     <>
     {/*<!-- Component: Navbar with user profile --> */}
@@ -68,7 +73,7 @@ const NavBar = () => {
                 aria-current="page"
                 aria-haspopup="false"
                 tabIndex="0"
-                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-blue-50 focus:outline-none focus-visible:outline-none lg:px-8"
                 
               >
                 <span>Home</span>
@@ -80,7 +85,7 @@ const NavBar = () => {
                 aria-current="page"
                 aria-haspopup="false"
                 tabIndex="0"
-                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-blue-50 focus:outline-none focus-visible:outline-none lg:px-8"
                 
               >
                 <span>Colleges</span>
@@ -93,7 +98,7 @@ const NavBar = () => {
                 aria-current="page"
                 aria-haspopup="false"
                 tabIndex="0"
-                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-blue-50 focus:outline-none focus-visible:outline-none lg:px-8"
                 
               >
                 <span>Admission</span>
@@ -106,23 +111,21 @@ const NavBar = () => {
                 aria-current="page"
                 aria-haspopup="false"
                 tabIndex="0"
-                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                className="flex items-center gap-2 py-4  transition-colors duration-300 focus:bg-blue-50 focus:outline-none focus-visible:outline-none lg:px-8"
                 
               >
                 <span>My College</span>
               </NavLink>
             </li>
-            <li role="none" className="flex items-stretch">
-              <NavLink to='/login'
-                role="menuitem"
-                aria-haspopup="false"
-                tabIndex="0"
-                className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-blue-800 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                
-              >
+            { user ?<><li role="none" className="flex items-stretch">
+                <button onClick={handleLogout} className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-blue-500 focus:bg-blue-50 focus:outline-none focus-visible:outline-none lg:px-8" >
+                <span>Sign Out</span>
+                </button>
+              </li></> : <><li role="none" className="flex items-stretch">
+                <NavLink to='/login' className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-blue-500 focus:bg-blue-50 focus:outline-none focus-visible:outline-none lg:px-8" >
                 <span>Login</span>
-              </NavLink>
-            </li>
+                </NavLink>
+              </li></>}
           </ul>
           <div className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
             {/*        <!-- user profile --> */}

@@ -3,7 +3,8 @@ import React from 'react';
 const GraduateGallery = () => {
     return (
         <>
-            <p className="text-3xl mt-6 mb-10 text-center">Graduate Gallery</p>
+            <p className="text-3xl mt-16 text-center">Graduate Gallery</p>
+            <p className='text-center'>"Welcome to our Graduate Gallery, showcasing the exceptional works of our talented graduates.<br/> Explore creativity, innovation, and passion brought to life in diverse disciplines. Enjoy the artistry!"</p>
 
             <div className='mt-10 mb-5 gap-6 lg:px-12 flex flex-col sm:flex-col lg:flex-row'>
                 <div className='mx-5 gap-4 grid sm:grid-cols-1 lg:grid-cols-3 lg:w-[100%]'>

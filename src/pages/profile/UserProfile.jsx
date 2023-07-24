@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
-import { Link } from 'react-router-dom';
 import SingleUserAdmissionData from './SingleUserAdmissionData';
 
 const UserProfile = () => {
-    const {user} = useContext(AuthContext);
+    const {user,logOutUser} = useContext(AuthContext);
 
     const [collegeData, setCollegeData] = useState([]);
     useEffect(()=>{
@@ -12,13 +11,17 @@ const UserProfile = () => {
         .then((data)=> data.json())
         .then((data)=> setCollegeData(data))
     },[]);
-    console.log(collegeData);
-
+    // console.log(collegeData);
+    const handleLogout = ()=>{
+      logOutUser()
+      .then()
+      .catch(error => {console.error(error)});
+    }
 
     return (
     <>
     <div className='mt-10 mb-5 gap-6 lg:px-12 flex flex-col md:flex-row lg:flex-row'> 
-        <div className='mx-auto lg:w-[30%]  bg-amber-300'>
+        <div className='mx-auto lg:w-[30%]'>
 
         {/*<!-- Component: User profile card --> */}
       <div className="overflow-hidden rounded bg-white text-center text-slate-500 shadow-md shadow-slate-200">
@@ -37,7 +40,7 @@ const UserProfile = () => {
         </div>
         {/*  <!-- Action base sized with lead icon buttons  --> */}
         <div className="justify-center gap-2 p-6 pt-0">
-          <button className="inline-flex h-10 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded bg-blue-500 px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-blue-600 focus:bg-blue-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-blue-300 disabled:bg-blue-300 disabled:shadow-none">
+          <button onClick={handleLogout} className="inline-flex h-10 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded bg-blue-500 px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-blue-600 focus:bg-blue-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-blue-300 disabled:bg-blue-300 disabled:shadow-none">
             <span className="order-2">Log Out</span>
           </button>
         </div>
@@ -52,7 +55,7 @@ const UserProfile = () => {
 
 
 
-        <div className='mx-5 gap-4 lg:w-[70%] md:w-[40%] bg-red-100'>
+        <div className='mx-5 gap-4 lg:w-[70%] md:w-[40%]'>
 
         {
             collegeData.map((data)=> <SingleUserAdmissionData key={data?._id} data={data} /> )

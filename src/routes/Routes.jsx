@@ -12,6 +12,7 @@ import Admission from "../pages/admission/Admission";
 import AdmissionForm from "../pages/admission/AdmissionForm";
 import MyCollege from "../pages/mycollege/MyCollege";
 import UserProfile from "../pages/profile/UserProfile";
+import EditForm from "../pages/profile/EditForm";
 
 const router= createBrowserRouter([
     {
@@ -54,11 +55,16 @@ const router= createBrowserRouter([
             },
             {
                 path:'/myCollege',
-                element:<MyCollege/>
+                element:<PrivateRoute><MyCollege/></PrivateRoute>
             },
             {
                 path:'/profile',
-                element:<UserProfile/>
+                element:<PrivateRoute><UserProfile/></PrivateRoute>
+            },
+            {
+                path:'/editCandidateData/:id',
+                element:<EditForm/>,
+                loader: ({params}) => fetch(`https://learn-lair-server-emonhasan007.vercel.app/editCandidateData/${params.id}`)
             }
             
         ]

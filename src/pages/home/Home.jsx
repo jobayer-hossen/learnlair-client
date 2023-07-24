@@ -3,6 +3,7 @@ import CollageCard from './CollageCard';
 import { useLoaderData } from 'react-router-dom';
 import GraduateGallery from './graduategallery/GraduateGallery';
 import StudentReview from './studentreview/StudentReview';
+import ResearchPaper from './researchpaper/Researchpaper';
 
 const Home = () => {
     const allData = useLoaderData();
@@ -51,11 +52,13 @@ const [data, getData] = useState(allData);
             }
             </div>
 
+
+
             <GraduateGallery/>
+            <ResearchPaper/>
             <StudentReview/>
-            {/* {
-                allReview.map((review)=> <StudentReview key={review._id} review={review} /> )
-            } */}
+            
+
         </>
     );
 };

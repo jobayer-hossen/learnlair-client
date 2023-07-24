@@ -1,44 +1,29 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useLoaderData } from 'react-router-dom';
-import Swal from 'sweetalert2'
-import { AuthContext } from '../../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
-
-const imageToken = import.meta.env.VITE_imageBB_Token;
-const imageURLApi = `https://api.imgbb.com/1/upload?key=${imageToken}`
-
-const AdmissionForm = () => {
-    const {user} = useContext(AuthContext);
-    
+const EditForm = () => {
     const getData = useLoaderData();
-    // console.log(getData);
-    const{collegeName,_id,collegeDetails,collegeImage}=getData;
-
+    const {collegeImage,collegeName,candidateName,subjectName,candidateEmail,phoneNumber,address,dateOfBirth,_id,collegeDetails,image}= getData;
     const { register, handleSubmit, reset } = useForm();
+    const editCandidateInformation= (data) =>{
+        const {candidateName , candidateEmail , address, collegeName} = data;
 
-    const candidateInformation= (data) =>{
+        const updateData= { 
+            candidateName:candidateName,
+             candidateEmail:candidateEmail,
+             address:address,
+             collegeName:collegeName
+            }
+        
 
-        const formData = new FormData();
-        formData.append('image', data.image[0])
-        // console.log(data.image[0]);
-        fetch(imageURLApi, {
-            method: 'POST',
-            body: formData
-        })
-        .then(res => res.json())
-        .then(imgResponse => {
-            if(imgResponse.success){
-                const imageURL = imgResponse.data.display_url;
-                const {candidateName , subjectName , candidateEmail , phoneNumber, address, dateOfBirth} = data;
-                const storeCandidateData = {candidateName, subjectName, candidateEmail, phoneNumber , address, image:imageURL ,dateOfBirth, collegeID:_id, collegeDetails:collegeDetails,collegeName:collegeName,collegeImage:collegeImage, email:user?.email};
-                // console.log(storeCandidateData);
-                fetch('https://learn-lair-server-emonhasan007.vercel.app/addCandidateData', {
-                    method: 'POST',
+        fetch(`https://learn-lair-server-emonhasan007.vercel.app/updateCandidateData/${_id}`, {
+                    method: 'PATCH',
                     headers: {
                         'content-type': 'application/json'
                     },
-                    body: JSON.stringify(storeCandidateData)
+                    body: JSON.stringify(updateData)
                 })
                     .then(res => res.json())
                     .then(data => {
@@ -53,20 +38,13 @@ const AdmissionForm = () => {
                             })
                         }
                     })
-            }
-        })
-        
     }
-
-
-
-
     return (
     <>
       <div className='lg:w-[50%] sm:w-full mx-auto mt-8 mb-10'>
         {/*<!-- Component: Card with form --> */}
       <form
-      onSubmit={handleSubmit(candidateInformation)}
+      onSubmit={handleSubmit(editCandidateInformation)}
       className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200">
         {/*  <!-- Body--> */}
         <div className="p-6">
@@ -95,20 +73,21 @@ const AdmissionForm = () => {
 
             <div className="relative my-6">
               <input
-                id="id-b04"
+                id="id-b06"
                 type="text"
                 name="subjectName"
-                {...register("subjectName" , { required: true})}
+                {...register("collegeName" , { required: true})}
                 placeholder="your name"
                 className="peer relative h-10 w-full rounded border border-slate-200 px-4 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-blue-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
               />
               <label
-                htmlFor="id-b04"
+                htmlFor="id-b06"
                 className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent"
               >
-                Candidate Chosen Subject Name
+                College Name
               </label>
             </div>
+
 
             <div className="relative my-6">
               <input
@@ -126,25 +105,6 @@ const AdmissionForm = () => {
                Candidate Email Address
               </label>
             </div>
-
-            <div className="relative my-6">
-              <input
-                id="id-b06"
-                type="text"
-                name="number"
-                {...register("phoneNumber" , { required: true})}
-                placeholder="your name"
-                className="peer relative h-10 w-full rounded border border-slate-200 px-4 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-blue-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
-              />
-              <label
-                htmlFor="id-b06"
-                className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent"
-              >
-                Candidate Phone Number
-              </label>
-            </div>
-
-
             <div className="relative my-6">
               <input
                 id="id-b07"
@@ -161,33 +121,6 @@ const AdmissionForm = () => {
                Candidate Address
               </label>
             </div>
-
-            <div className="relative my-6">
-              <input
-                id="id-b08"
-                type="date"
-                name="dateOfBirth"
-                {...register("dateOfBirth" , { required: true})}
-                placeholder="your name"
-                className="peer relative h-10 w-full rounded border border-slate-200 px-4 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-blue-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
-              />
-              <label
-                htmlFor="id-b08"
-                className="absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent"
-              >
-               Candidate Date of Birth
-              </label>
-            </div>
-
-            <div>
-                <label className="text-xs text-slate-400" >Candidate </label>
-
-                    <input type="file" {...register("image", { required: true })}className="block w-full px-3 py-2 mt-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg file:bg-blue-200 file:text-gray-700 file:text-sm file:px-4 file:py-1 file:border-none file:rounded-full y-200  placeholder-gray-400/70 ray-500 focus:border-green-400 focus:outline-none focus:ring focus:ring-green-300 focus:ring-opacity-40 " />
-                </div>
-            
-          
-
-
           </div>
         </div>
         {/*  <!-- Action base sized basic button --> */}
@@ -195,14 +128,14 @@ const AdmissionForm = () => {
           <button
           type='submit'
           className="inline-flex h-10 w-full items-center justify-center gap-2 whitespace-nowrap rounded bg-blue-500 px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-blue-600 focus:bg-blue-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-blue-300 disabled:bg-blue-300 disabled:shadow-none">
-            <span>Submit</span>
+            <span>Save</span>
           </button>
         </div>
       </form>
       {/*<!-- End Card with form --> */}
-      </div>
+      </div>      
     </>
     );
 };
 
-export default AdmissionForm;
+export default EditForm;
