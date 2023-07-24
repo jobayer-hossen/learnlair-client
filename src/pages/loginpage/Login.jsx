@@ -59,9 +59,9 @@ const Login = () => {
         resetPassword(email)
         .then(() => {
             Swal.fire({
-                title: 'Success!',
-                text: 'Your account log in Successfully!',
-                icon: 'success',
+                title: 'warning',
+                text: 'Check your inbox or spam box !',
+                icon: 'warning',
                 confirmButtonText: 'Okay'
             })
         })
@@ -161,10 +161,10 @@ const Login = () => {
                             <Link to='/resister' rel="noopener noreferrer" className="focus:underline hover:underline"> Resister here</Link>
                         </p>
 
-                        {/* <div>
+                        <div>
                             <p className='text-base font-bold text-red-600 text-center '>{error}</p>
                             <p className='text-base font-bold text-lime-500 text-center '>{success}</p>
-                        </div> */}
+                        </div>
                     </div>
 
 

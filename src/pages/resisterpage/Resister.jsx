@@ -99,6 +99,7 @@ const Resister = () => {
                 </p>
                         <div>
                              <span className='text-base font-bold text-red-600 text-center '>{error}</span>
+                             <p className='text-base font-bold text-lime-500 text-center '>{success}</p>
                         </div>
 
                     </div>
