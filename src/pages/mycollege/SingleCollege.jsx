@@ -59,7 +59,7 @@ const SingleCollege = ({data}) => {
     return (
     <>
     <Fade bottom>
-      <section className="text-gray-600 w-[90%] body-font overflow-hidden mx-auto mt-8 mb-8 shadow-xl">
+      <section className="bg-blue-50 text-gray-600 w-[90%] body-font overflow-hidden mx-auto mt-8 mb-8 shadow-xl">
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
                     <div>
                     <img alt="ecommerce" className="w-[65%] rounded mx-auto" src={collegeImage} />

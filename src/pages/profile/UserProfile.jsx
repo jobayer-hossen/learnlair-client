@@ -26,7 +26,7 @@ const UserProfile = () => {
         <div className='mx-auto lg:w-[30%]'>
 
         {/*<!-- Component: User profile card --> */}
-      <div className="overflow-hidden rounded bg-white text-center text-slate-500 shadow-md shadow-slate-200">
+      <div className="overflow-hidden rounded bg-blue-50 text-center text-slate-500 shadow-md shadow-slate-200">
         {/*  <!-- Image --> */}
                         <div className="flex flex-col items-center mt-6 -mx-2 ">
                     <img className="object-cover w-24 h-24 mx-2 rounded-full ring ring-success ring-offset-base-100 ring-offset-2" src={user?.photoURL} alt="avatar" />

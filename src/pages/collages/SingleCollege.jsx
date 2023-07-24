@@ -8,7 +8,7 @@ const SingleCollege = ({data}) => {
     <>
     <Fade bottom>
       {/*<!-- Component: Basic blog card --> */}
-      <div className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200 p-5">
+      <div className="overflow-hidden rounded bg-blue-50 text-slate-500 shadow-md shadow-slate-200 p-5">
         {/*  <!-- Image --> */}
         <figure>
           <img

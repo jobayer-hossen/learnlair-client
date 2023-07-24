@@ -9,7 +9,7 @@ const SingleDetails = () => {
     // console.log(singleData);
     return (
         <>
-            <div className=" overflow-hidden rounded-lg shadow-md w-[70%] mx-auto mt-2 mb-5">
+            <div className="bg-blue-50 overflow-hidden rounded-lg shadow-md w-[70%] mx-auto mt-2 mb-5">
                 <img className="object-cover w-full h-64" src={collegeImage} alt="Article" />
                 <div className="p-6">
                     <div>

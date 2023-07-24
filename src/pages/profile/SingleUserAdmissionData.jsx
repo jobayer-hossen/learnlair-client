@@ -5,7 +5,7 @@ const SingleUserAdmissionData = ({data}) => {
     const {collegeImage,collegeName,candidateName,subjectName,candidateEmail,phoneNumber,address,dateOfBirth,_id,collegeDetails,image}= data;
     return (
     <>
-      <section className="text-gray-600 w-full body-font overflow-hidden mx-auto mt-8 mb-8 shadow-xl">
+      <section className="text-gray-600 bg-blue-50 w-full body-font overflow-hidden mx-auto mt-8 mb-8 shadow-xl">
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
                     <div>
                     <img alt="ecommerce" className="w-[65%] rounded mx-auto" src={collegeImage} />
