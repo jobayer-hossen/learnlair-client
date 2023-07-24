@@ -47,7 +47,7 @@ const EditForm = () => {
         {/*<!-- Component: Card with form --> */}
       <form
       onSubmit={handleSubmit(editCandidateInformation)}
-      className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200">
+      className="overflow-hidden rounded bg-blue-50 text-slate-500 shadow-md shadow-slate-200">
         {/*  <!-- Body--> */}
         <div className="p-6">
           <header className="mb-4 text-center">
